@@ -1,0 +1,18 @@
+language: java
+os: linux
+env:
+  global:
+    - RABBITMQ_HOST=localhost
+sudo: required
+jdk:
+  - oraclejdk8
+
+services:
+## travis 自带 rabbitmq 支持
+  - rabbitmq
+
+script: mvn clean install cobertura:cobertura
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
+  

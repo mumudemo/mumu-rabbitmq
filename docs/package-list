@@ -1,0 +1,6 @@
+com.lovecws.mumu.rabbitmq
+com.lovecws.mumu.rabbitmq.pubsub
+com.lovecws.mumu.rabbitmq.quickstart
+com.lovecws.mumu.rabbitmq.rpc
+com.lovecws.mumu.rabbitmq.topic
+com.lovecws.mumu.rabbitmq.workqueue
